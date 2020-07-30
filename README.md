@@ -4,9 +4,7 @@
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/:author_username/:package_name/run-tests?label=tests)](https://github.com/:author_username/:package_name/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/:author_username/:package_name.svg?style=flat-square)](https://packagist.org/packages/:author_username/:package_name)
 
-**Note:** Replace ```:author_name``` ```:author_username``` ```:author_email``` ```:package_name``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
-
-This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
+:package_description
 
 
 ## Installation

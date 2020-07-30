@@ -50,7 +50,7 @@ folder_name=$(basename "$current_directory")
 package_name=$(ask_question "Package name" "$folder_name")
 class_name=$(words_to_camelcase "$package_name")
 
-package_description=$(ask_question "Package description" "")
+package_description=$(ask_question "Package description" "This is my package $class_name")
 
 echo -e "Author: $author_name ($author_username, $author_email)"
 echo -e "Package: $package_name -- $package_description"
@@ -79,7 +79,6 @@ for file in $files ; do
     | sed "s/:package_name/$package_name/g" \
     | sed "s/:class_name/$class_name/g" \
     | sed "s/:package_description/$package_description/g" \
-    | sed "/^\*\*Note:\*\* Replace/d" \
     > "$temp_file"
     rm -f "$file"
     mv "$temp_file" "$file"
