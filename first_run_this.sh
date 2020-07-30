@@ -1,4 +1,5 @@
 #!/bin/bash
+script_name=$(basename $0)
 
 ask_question(){
     # ask_question <question> <default>
@@ -25,8 +26,9 @@ words_to_camelcase(){
         }
         print $0;
     }' \
-    | sed 's/\s//g'
+    | sed 's/ //g'
 }
+
 
 # author full name
 git_name=$(git config user.name)
@@ -40,18 +42,18 @@ author_email=$(ask_question "Author email" "$git_email")
 git_username=$(git config remote.origin.url | cut -d: -f2)
 git_username=$(dirname $git_username)
 git_username=$(basename $git_username)
-author_username=$(ask_question "Author username" "git_username")
+author_username=$(ask_question "Author username" "$git_username")
 package_namespace=$(words_to_camelcase $author_username)
 # package name
 current_directory=$(pwd)
 folder_name=$(basename "$current_directory")
 package_name=$(ask_question "Package name" "$folder_name")
-
-package_description=$(ask_question "Package description" "")
 class_name=$(words_to_camelcase "$package_name")
 
+package_description=$(ask_question "Package description" "")
+
 echo -e "Author: $author_name ($author_username, $author_email)"
-echo -e "Package: $package_name <$package_description>"
+echo -e "Package: $package_name -- $package_description"
 echo -e "Suggested Namespace : $package_namespace"
 echo -e "Suggested Class Name: $class_name"
 
@@ -59,6 +61,7 @@ echo
 files=$(grep -E -r -l ":author|:package" ./*  | grep -v "$script_name")
 
 echo "This script will replace the above values in all relevant files in the project directory and reset the git repository."
+echo $files
 if ! confirm "Modify composer.json and .MD Markdown files?" ; then
     $safe_exit 1
 fi
