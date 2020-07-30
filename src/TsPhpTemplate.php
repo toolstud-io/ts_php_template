@@ -1,7 +1,7 @@
 <?php
-// Author: :author_name (:author_username, :author_email)
-namespace :package_namespace;
+// Author: author__name (author__username, author@email.com)
+namespace package__namespace;
 
-class :class_name
+class class__name
 {
 }

@@ -1,17 +1,17 @@
 {
-    "name": "spatie/:package_name",
-    "description": ":package_description",
+    "name": ":author__username/package__name",
+    "description": "package__description",
     "keywords": [
-        ":author_username",
-        ":package_name"
+        "author__username",
+        "package__name"
     ],
-    "homepage": "https://github.com/:author_username/:package_name",
+    "homepage": "https://github.com/author__username/package__name",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://:author_username.github.io/",
+            "name": "author__name",
+            "email": "author@email.com",
+            "homepage": "https://author__username.github.io/",
             "role": "Developer"
         }
     ],
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":package_namespace\\:class_name\\": "src"
+            "package__namespace\\class__name\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":package_namespace\\:class_name\\Tests\\": "tests"
+            "package__namespace\\class__name\\Tests\\": "tests"
         }
     },
     "scripts": {

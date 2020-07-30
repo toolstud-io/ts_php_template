@@ -1,5 +1,6 @@
 #!/bin/bash
 script_name=$(basename $0)
+init_date=$(date '+%Y-%m-%d')
 
 ask_question(){
     # ask_question <question> <default>
@@ -72,13 +73,14 @@ for file in $files ; do
     echo "Updating file $file"
     temp_file="$file.temp"
     < "$file" \
-      sed "s/:author_name/$author_name/g" \
-    | sed "s/:author_username/$author_username/g" \
-    | sed "s/:author_email/$author_email/g" \
-    | sed "s/:package_namespace/$package_namespace/g" \
-    | sed "s/:package_name/$package_name/g" \
-    | sed "s/:class_name/$class_name/g" \
-    | sed "s/:package_description/$package_description/g" \
+      sed "s/author__name/$author_name/g" \
+    | sed "s/author__username/$author_username/g" \
+    | sed "s/author@email.com/$author_email/g" \
+    | sed "s/package__namespace/$package_namespace/g" \
+    | sed "s/package__name/$package_name/g" \
+    | sed "s/class__name/$class_name/g" \
+    | sed "s/package__description/$package_description/g" \
+    | sed "s/init__date/$init_date/g" \
     > "$temp_file"
     rm -f "$file"
     mv "$temp_file" "$file"

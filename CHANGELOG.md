@@ -1,7 +1,7 @@
 # Changelog
 
-All notable changes to `:package_name` will be documented in this file
+All notable changes to `package__name` will be documented in this file
 
-## 1.0.0 - 202X-XX-XX
+## 1.0.0 - init__date by author@email.com
 
 - initial release
