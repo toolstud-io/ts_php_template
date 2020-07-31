@@ -89,4 +89,6 @@ done
 if confirm 'Let this script delete itself (since you only need it once)?' ; then
     echo "Delete $0 !"
     rm -- "$0"
+    rm -- README.md
+    mv README.template.md README.md
 fi

@@ -1,33 +1,23 @@
-# package_description
+# ts_php_template
 
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/author_username/package_name/run-tests?label=tests)](https://github.com/author_username/package_name/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Packagist Version](https://img.shields.io/packagist/v/author_username/package_name.svg?style=flat-square)](https://packagist.org/packages/author_username/package_name)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/author_username/package_name.svg?style=flat-square)](https://packagist.org/packages/author_username/package_name)
+![Run Tests](https://github.com/toolstud-io/ts_php_template/workflows/Run%20Tests/badge.svg)
+![Detect Psalm warnings](https://github.com/toolstud-io/ts_php_template/workflows/Detect%20Psalm%20warnings/badge.svg)
+![Check & fix styling](https://github.com/toolstud-io/ts_php_template/workflows/Check%20&%20fix%20styling/badge.svg)
 
-package_description
+Base package template for development of open source PHP packages
 
-	created on init_date by author@email.com
-
-## Installation
-
-You can install the package via composer:
-
-```bash
-composer require author_username/package_name
-```
+_Created on 2020-07-30 by Peter Forret for toolstud.io_
 
 ## Usage
 
-``` php
-$obj = new package_namespace\class_name();
-echo $obj->echoPhrase('Hello, author_username!');
-```
-
-## Testing
-
-``` bash
-composer test
-```
+* on https://github.com/toolstud-io/ts_php_template
+* click on 'Use this template'
+* choose the name of your new package
+* `git clone <your github>/<your_new_package>`
+* `cd <your_new_package>`
+* `./first_run_this.sh`
+* answer all the questions correctly
+* taadaa!
 
 ## Changelog
 
@@ -37,14 +27,9 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-## Security
-
-If you discover any security related issues, please email author_email instead of using the issue tracker.
-
 ## Credits
 
-- [author_name](https://github.com/author_username)
-- [All Contributors](../../contributors)
+- [Peter Forret](https://github.com/pforret)
 
 ## License
 
