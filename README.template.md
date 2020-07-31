@@ -1,6 +1,7 @@
 # package_description
 
-Github CI: 
+Github: 
+![GitHub tag](https://img.shields.io/github/v/tag/author_username/package_name)
 ![Tests](https://github.com/author_username/package_name/workflows/Run%20Tests/badge.svg)
 ![Psalm](https://github.com/author_username/package_name/workflows/Detect%20Psalm%20warnings/badge.svg)
 ![Styling](https://github.com/author_username/package_name/workflows/Check%20&%20fix%20styling/badge.svg)
