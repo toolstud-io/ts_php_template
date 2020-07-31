@@ -93,4 +93,4 @@ if confirm 'Let this script delete itself (since you only need it once)?' ; then
     mv README.template.md README.md
 fi
 
-out "Now run: git commit -a && git push"
+echo "Now run: git commit -a -m 'prepped with $script_name' && git push"
