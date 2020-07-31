@@ -19,9 +19,9 @@ _Created on 2020-07-30 by Peter Forret for toolstud.io_
 * answer all the questions correctly
 * taadaa!
 
-## Changelog
+## Inspiration
 
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+* from https://github.com/spatie/package-skeleton-php
 
 ## Contributing
 
