@@ -1,10 +1,12 @@
 # package_description
 
-Github CI: ![Run Tests](https://github.com/author_username/package_name/workflows/Run%20Tests/badge.svg)
-![Detect Psalm warnings](https://github.com/author_username/package_name/workflows/Detect%20Psalm%20warnings/badge.svg)
-![Check & fix styling](https://github.com/author_username/package_name§/workflows/Check%20&%20fix%20styling/badge.svg)
+Github CI: 
+![Tests](https://github.com/author_username/package_name/workflows/Run%20Tests/badge.svg)
+![Psalm](https://github.com/author_username/package_name/workflows/Detect%20Psalm%20warnings/badge.svg)
+![Styling](https://github.com/author_username/package_name/workflows/Check%20&%20fix%20styling/badge.svg)
 
-Packagist: [![Packagist Version](https://img.shields.io/packagist/v/author_username/package_name.svg?style=flat-square)](https://packagist.org/packages/author_username/package_name)
+Packagist: 
+[![Packagist Version](https://img.shields.io/packagist/v/author_username/package_name.svg?style=flat-square)](https://packagist.org/packages/author_username/package_name)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/author_username/package_name.svg?style=flat-square)](https://packagist.org/packages/author_username/package_name)
 
 package_description

@@ -92,3 +92,5 @@ if confirm 'Let this script delete itself (since you only need it once)?' ; then
     rm -- README.md
     mv README.template.md README.md
 fi
+
+out "Now run: git commit -a && git push"
