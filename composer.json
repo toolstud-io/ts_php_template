@@ -1,5 +1,5 @@
 {
-    "name": ":author__username/package__name",
+    "name": "author__username/package__name",
     "description": "package__description",
     "keywords": [
         "author__username",
