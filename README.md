@@ -1,4 +1,4 @@
-# :package_description
+# package_description
 
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/author__username/package__name/run-tests?label=tests)](https://github.com/author__username/package__name/actions?query=workflow%3Arun-tests+branch%3Amaster)
 
