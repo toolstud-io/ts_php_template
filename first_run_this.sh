@@ -59,7 +59,7 @@ echo -e "Suggested Namespace : $package_namespace"
 echo -e "Suggested Class Name: $class_name"
 
 echo
-files=$(grep -E -r -l ":author|:package" ./*  | grep -v "$script_name")
+files=$(grep -E -r -l "author_|package_" ./*  | grep -v "$script_name")
 
 echo "This script will replace the above values in all relevant files in the project directory and reset the git repository."
 echo $files
@@ -73,7 +73,7 @@ for file in $files ; do
     echo "Updating file $file"
     temp_file="$file.temp"
     < "$file" \
-      sed "s/author__name/$author_name/g" \
+      sed "s/author_name/$author_name/g" \
     | sed "s/author_username/$author_username/g" \
     | sed "s/author@email.com/$author_email/g" \
     | sed "s/package_namespace/$package_namespace/g" \
