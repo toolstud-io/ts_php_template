@@ -1,5 +1,6 @@
 {
     "name": "author__username/package__name",
+    "version": "0.0.0",
     "description": "package__description",
     "keywords": [
         "author__username",
