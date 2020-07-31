@@ -1,22 +1,22 @@
 {
-    "name": "author__username/package__name",
+    "name": "author_username/package_name",
     "version": "0.0.0",
-    "description": "package__description",
+    "description": "package_description",
     "keywords": [
-        "author__username",
-        "package__name"
+        "author_username",
+        "package_name"
     ],
-    "homepage": "https://github.com/author__username/package__name",
+    "homepage": "https://github.com/author_username/package_name",
     "license": "MIT",
     "authors": [
         {
-            "name": "author__name",
+            "name": "author_name",
             "email": "author@email.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.4"
+        "php": "^7.3"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "package__namespace\\class__name\\": "src"
+            "package_namespace\\class_name\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "package__namespace\\class__name\\Tests\\": "tests"
+            "package_namespace\\class_name\\Tests\\": "tests"
         }
     },
     "scripts": {
