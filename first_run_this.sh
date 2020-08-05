@@ -1,5 +1,5 @@
 #!/bin/bash
-script_name=$(basename $0)
+script_name=$(basename "$0")
 init_date=$(date '+%Y-%m-%d')
 
 ask_question(){
@@ -41,10 +41,10 @@ author_email=$(ask_question "Author email" "$git_email")
 
 # author github username
 git_username=$(git config remote.origin.url | cut -d: -f2)
-git_username=$(dirname $git_username)
-git_username=$(basename $git_username)
+git_username=$(dirname "$git_username")
+git_username=$(basename "$git_username")
 author_username=$(ask_question "Author username" "$git_username")
-package_namespace=$(words_to_camelcase $author_username)
+package_namespace=$(words_to_camelcase "$author_username")
 # package name
 current_directory=$(pwd)
 folder_name=$(basename "$current_directory")
@@ -62,9 +62,9 @@ echo
 files=$(grep -E -r -l "author_|package_" ./*  | grep -v "$script_name")
 
 echo "This script will replace the above values in all relevant files in the project directory and reset the git repository."
-echo $files
+echo "$files"
 if ! confirm "Modify composer.json and .MD Markdown files?" ; then
-    $safe_exit 1
+    safe_exit 1
 fi
 
 echo
