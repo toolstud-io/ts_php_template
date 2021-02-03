@@ -86,6 +86,13 @@ for file in $files ; do
     mv "$temp_file" "$file"
 done
 
+filenames=$(find . =type f | grep "class_")
+for filename in $filenames ;do
+  new_name=${filename//class_name/$class_name}
+  echo "Renaming $filename -> $new_name"
+  mv "$filename" "$new_name"
+done
+
 if confirm 'Let this script delete itself (since you only need it once)?' ; then
     echo "Delete $0 !"
     rm -- "$0"
