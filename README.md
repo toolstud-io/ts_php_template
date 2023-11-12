@@ -1,8 +1,6 @@
 # ts_php_template
 
 ![Run Tests](https://github.com/toolstud-io/ts_php_template/workflows/Run%20Tests/badge.svg)
-![Detect Psalm warnings](https://github.com/toolstud-io/ts_php_template/workflows/Detect%20Psalm%20warnings/badge.svg)
-![Check & fix styling](https://github.com/toolstud-io/ts_php_template/workflows/Check%20&%20fix%20styling/badge.svg)
 
 Base package template for development of open source PHP packages
 
